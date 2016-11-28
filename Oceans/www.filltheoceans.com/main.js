@@ -105,8 +105,6 @@ var Game = {
 		sacrificeLevel: 0,
 		sacrificeDivActive: 0,
 		sacrificeDivHover: 0,
-		timelaga: Date.now(),
-		timelagb: 0,
 		offlineperc: 0,
 		offlinetime: 0,
 		lastsavetime: 0,
@@ -935,23 +933,7 @@ var Game = {
 				self.max_drops_in_ocean = self.max_drops_in_ocean_c;
 				self._startknowhow();
 			});
-						
-			
-			
-			this.handle = window.setInterval(function() {
-				
-				self.timelagb = Date.now();
-				var diff = self.timelagb - self.timelaga;
-				
-				self._tick(diff);
-				self.timelaga = self.timelagb;
-			}, this.interval);
-			
-			this.handleother = window.setInterval(function() {
-				self._tickother();
-			}, 1000);
-			
-			
+	
 
 			for (var a=0;a<this.channel_max;a++) {			
 				this.audiochannels[a] = new Array();
