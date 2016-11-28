@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from www.filltheoceans.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Nov 2016 21:04:29 GMT -->
+<head>
+	<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+	<script>
+	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	  })(window,document,'script','../www.google-analytics.com/analytics.js','ga');
+
+	  ga('create', 'UA-88005348-1', 'auto');
+	  ga('send', 'pageview');
+
+	</script>
+	<script>
+	  (adsbygoogle = window.adsbygoogle || []).push({
+		google_ad_client: "ca-pub-7150504416301667",
+		enable_page_level_ads: true
+	  });
+	</script>
+		<link rel="shortcut icon" href="favicon.ico">
+			
+		<meta charset="utf-8"> 
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" type="text/css" href="rotate.css">
+		<link rel="stylesheet" type="text/css" href="hover.css">
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<title>Fill The Oceans - v. 0.1.0 beta</title>
+		
+	</head>
+	<body id="body">
+		<!-- Introscreen with explanation -->
+		<div id="intro">
+			<div id="introcontent">
+				<div id="introcontenttext">
+					<div style="float:left; font-size:0.8em; ">Use ctrl-- or ctrl-+ to zoom out or in untill all text is clearly visible.</div>
+					<h1>Fill The Oceans</h1>
+					<p>Oh nooo! Aliens stole all the water from earth. All the oceans are empty, not a drop is left! We're doomed.</p>
+					<p>&nbsp;</p>
+					<p>There's only one hope. A crazy scientist claims he invented a way to make water out of nothing. Each time you click the big drop on screen, his machine produces a very little drop of water. Pure, clean, precious water.</p>
+					<p>The crazy scientist is working around the clock to make his machine faster. But to make it faster he needs water!</p>
+					<p>We found some technology the aliens left behind and the crazy scientist is trying to figure out how to use it to get more drops.</p>
+					<p>&nbsp;</p>
+					<p>You've got to fill the oceans drop by drop. Start Clicking the drop and buy helpers and upgrades with drops.</p>
+					<p>Click "Fill the ocean" to put the drops you produced in the ocean, but watch out, you can't buy stuff with the drops you put into the ocean.</p>
+					<p>&nbsp;</p>
+					<h2>Tip: try to click on these when you see them</h2>
+					<table>
+						<tr>
+							<td>Clouds make it rain and storm!</td>
+							<td>When there are quite some drops in the oceans, the sun can evaporate them. Protect your drops from the sun!</td>
+						</tr>
+						<tr>
+							<td><img src="images/cloud.png"></td>
+							<td><img src="images/sun.png"></td>
+						</tr>
+					</table>
+					
+					<p>&nbsp;</p>
+					<p>If not everything is visible on screen, adjust the zoom of your browser.</p>
+					
+					<p style="clear:both; text-align:center;"><button id="start">Start</button></p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+				</div>
+			</div>
+			<div id="scalealien"><div id="alienbig" class="hover hover-constant"></div></div>
+		</div>
+		
+		<!-- First successcreen -->
+		<div id="endscreena">
+			<div id="endscreenacontent">
+				<h1>You did it!</h1>
+				<p>You filled the oceans, we are saved.</p>
+				<p>We can drink again without worries, our ecosystems are coming back and humanity will survive!</p>
+				<p>We can again go for a refreshing swim in a clear blue ocean with nice little fish like the Sarcastic Fringehead.</p>
+				
+				<h1>Help the aliens</h1>
+				<p>The aliens are so impressed they ask for your help. They have hundreds of worlds that are without water and are begging you to help them.</p>
+				<p>You'll need a lot more drops to fill all those oceans.</p></br></br>
+				<p ><button id="endastartover" class="knowhow">Start over</button>&nbsp;<button id="endahelp" class="knowhow">Help the aliens</button></p>
+			</div>
+		</div>
+		
+		<!-- Second successcreen -->
+		<div id="endscreenb">
+			<div id="endscreenbcontent">
+				<h1>You did it!</h1>
+				<p>You filled all the oceans of the aliens.</p>
+				<p>Now the aliens can enjoy the beauty of the ocean wildlife too, what can be more beautiful than a Humpback Angler Fish?</p>
+				
+				<h1>To infinity!</h1>
+				<p>You should stop now. You really should.</p>
+				<p>Ok, ok, I know you want to reach infinity, go on then, I dare you, click "To infinity!"</p></br></br>
+				<p ><button id="endbstartover" class="knowhow">Start over</button>&nbsp;<button id="endbinfinity" class="knowhow">To infinity!</button></p>
+			</div>
+		</div>
+		
+		
+		<!-- Poseidon Minigame -->
+		<div id="poseidonMinigame">
+			<div id="poseidonContent">
+				<button id="poseidonBacktogameButton" class="knowhow">Back to game</button>
+				<p class="popovertitle">Build a 1000 Temples</p>
+				<p>To build a temple you need to cut wood and stone, and have builders.</p><p>To feed builders and other workers you need food, and to house them you need tents or houses.</p><p>You can make workers farm, cut wood, cut stone or build.</p>
+				<p>&nbsp;</p>
+				
+				<div class="poseidonMinigameResourceGroupDiv">
+					<div style="display:inline-block;">
+						<div id="foodDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Food and leather</p>
+							<table>
+								<tr>
+									<td><div id="pFoodImage"></div></td>
+									<td><p>Food: <span id="pFoodTotalStat" class="stattxt">0</span></p><p>Leather: <span id="pLeatherTotalStat" class="stattxt">0</span></p></td>
+								</tr>
+								<tr>
+									<td><p>Maximum-capacity: <span id="pFoodBarnCapStat" class="stattxt">0</span></p><p>Upgrade: max. capacity +100</p><p>Cost: <span id="pFoodBarnCostStat" class="stattxt">0</span> wood</p></td>
+									<td><div id="pFoodBarnImage" class="pBarnImage"></div></td>
+								</tr>
+							</table>
+						</div>
+						<div id="woodDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Wood</p>
+							<table>
+								<tr>
+									<td><div id="pWoodImage"></div></td>
+									<td><p>Wood: <span id="pWoodTotalStat" class="stattxt">0</span></p></td>
+								</tr>
+								<tr>
+									<td><p>Maximum-capacity: <span id="pWoodBarnCapStat" class="stattxt">0</span></p><p>Upgrade: max. capacity +100</p><p>Cost: <span id="pWoodBarnCostStat" class="stattxt">0</span> wood</p></td>
+									<td><div id="pWoodBarnImage" class="pBarnImage"></div></td>
+								</tr>
+							</table>
+						</div>
+						<div id="stoneDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Stone</p>
+							<table>
+								<tr>
+									<td><div id="pStoneImage"></div></td>
+									<td><p>Stone: <span id="pStoneTotalStat" class="stattxt">0</span></p></td>
+								</tr>
+								<tr>
+									<td><p>Maximum-capacity: <span id="pStoneBarnCapStat" class="stattxt">0</span></p><p>Upgrade: max. capacity +100</p><p>Cost: <span id="pStoneBarnCostWoodStat" class="stattxt">0</span> wood + <span id="pStoneBarnCostStoneStat" class="stattxt">0</span> stone</p></td>
+									<td><div id="pStoneBarnImage" class="pBarnImage"></div></td>
+								</tr>
+							</table>
+						</div>
+						<div style="clear:both;"></div>
+					</div>
+				</div>
+				<div  class="poseidonMinigameResourceGroupDiv">
+					<div style="display:inline-block;">
+						<div id="housingDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Housing</p>
+							<table>
+								<tr>
+									<td valign="top" style="height:92px; width:80px;"><div id="pTentImage"></div></td>
+									<td><p style="text-align:center; min-width:50px;"><span id="pTentStat" class="stattxt">0</span></p></td>
+									<td><p>Tent: 1 person<p/><p>Cost: 2 leather + 2 wood</p></td>
+								</tr>
+								<tr>
+									<td valign="top" id="pWoodenhouseTD" style="height:92px; width:80px;"><div id="pWoodenhouseImage"></div></td>
+									<td><p style="text-align:center; min-width:50px;"><span id="pWoodenhouseStat" class="stattxt">0</span></p></td>
+									<td><p>Wooden house: 3 persons<p/><p>Cost: 1 leather + 20 wood</p><p>Two builders needed</p></td>
+								</tr>
+								<tr>
+									<td valign="top" id="pStonehouseTD" style="height:92px; width:80px;"><div id="pStonehouseImage"></div></td>
+									<td><p style="text-align:center; min-width:50px;"><span id="pStonehouseStat" class="stattxt">0</span></p></td>
+									<td><p>Stone house: 6 persons<p/><p>Cost: 1 leather + 10 wood + 30 stone</p><p>Five builders needed</p></td>
+								</tr>
+							</table>
+						</div>
+						<div id="workersDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Workers</p>
+							<table>
+								<tr>
+									<td><div id="pWorkerImage"></div></td>
+									<td style="width:50px;"><p style="text-align:center;"><span id="pWorkerStat" class="stattxt">0</span></p></td>
+									<td><p>Cost: 20 food</p><p>Needs food to survive</p><p>Maximum number of workers: <span id="pWorkerMaxCapStat" class="stattxt">0</span></p><p style="font-size:0.5em;"></p></td>
+								</tr>
+								
+								<tr>
+									<td colspan="3"><p style="text-align:center;">Workers without a job: <span id="pWorkerIdleStat" class="stattxt">0</span></p><p style="font-size:0.5em;"></p></td>
+								</tr>
+								
+								<tr>
+									<td colspan="3">
+										<table>
+											<tr>
+												<td>Farmers:</td>
+												<td><button id="pFarmerMinButton" class="optionbutton">-</button></td>
+												<td style="height:20px; width:70px; text-align:center;"><span id="pFarmerStat" class="stattxt" >0</span></td>
+												<td><button id="pFarmerPlusButton" class="optionbutton">+</button></td>
+											</tr>
+											<tr>
+												<td>Woodcutters:&nbsp;&nbsp;&nbsp;</td>
+												<td><button id="pWoodcutterMinButton" class="optionbutton">-</button></td>
+												<td style="height:20px; width:70px; text-align:center;"><span id="pWoodcutterStat" class="stattxt" >0</span></td>
+												<td><button id="pWoodcutterPlusButton" class="optionbutton">+</button></td>
+											</tr>
+											<tr>
+												<td>Stonecutters:</td>
+												<td><button id="pStonecutterMinButton" class="optionbutton">-</button></td>
+												<td style="height:20px; width:70px; text-align:center;"><span id="pStonecutterStat" class="stattxt" >0</span></td>
+												<td><button id="pStonecutterPlusButton" class="optionbutton">+</button></td>
+											</tr>
+											<tr>
+												<td>Builders:</td>
+												<td><button id="pBuilderMinButton" class="optionbutton">-</button></td>
+												<td style="height:20px; width:70px; text-align:center;"><span id="pBuilderStat" class="stattxt" >0</span></td>
+												<td><button id="pBuilderPlusButton" class="optionbutton">+</button></td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+								
+								<tr>
+									<td colspan="3">
+										<p style="font-size:0.5em;"></p>
+										<p style="text-align:center;">Builders not working: <span id="pBuildersIdleStat" class="stattxt">0</span></p>
+										<p style="text-align:center;">Builders at work: <span id="pBuildersWorkingStat" class="stattxt">0</span></p>
+									</td>
+								</tr>
+								<tr>
+									<td colspan="3">
+										<p style="text-align:center;">Workers that died: <span id="pWorkerDieStat" class="stattxt">0</span></p>
+									</td>
+								</tr>
+							</table>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+				
+				<div  class="poseidonMinigameResourceGroupDiv">
+					<div style="display:inline-block;">
+						<div id="templesDiv" class="poseidonMinigameResourceDiv"><p class="pResourceTitle">Temple</p>
+							<table>
+								<tr>
+									<td style="text-align:center;"><div id="pTempleImage"></div></td>
+									<td><p>Cost: <span id="pTempleCostWoodStat" class="stattxt">0</span> wood + <span id="pTempleCostStoneStat" class="stattxt">0</span> stone</p><p>Twenty builders needed.</p></td>
+								</tr>
+								<tr>
+									<td id="pTempleTimeTD" colspan="2"></td>
+								</tr>
+								<tr>
+									<td style="text-align:center;" colspan="2"><p style="font-size:3em; text-align:center;"><span id="pTempleStat" class="stattxt">0</span></p></td>
+								</tr>
+							</table>
+							<div id="pCongratulationsDiv">Congratulations!<br />You build a 1000 Temples!</div>
+						</div>
+					</div>
+					<div style="clear:both;"></div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div id="cookiebanner">
+			<table style="width:100%;">
+				<tr>
+					<td>This site uses cookies for ads, traffic analysis and to save the game. <a href="cookiestatement.html" target="_blank">Learn more</a></td>
+					<td><button id="gotit">Got it!</button></td>
+				</tr>
+			</table>
+		</div>
+		<div id="knowhowscreen">
+			<div id="knowhowstats">
+				<div id="knowhowtitle">Know-how</div>
+				<p>Experience points: <span id="knowhowscreen_exp_stats" class="stattxt">0</span></p>
+				<p>Know-how: <span id="knowhowscreen_knowhow_stats" class="stattxt">0</span></p>
+			</div>
+			<div id="starsdrag"></div>
+			<div id="superdrag">
+				<div id="super1"></div>
+				<div id="super2"></div>
+				<div id="super3"></div>
+				<div id="super4"></div>
+			</div>
+			<div id="khdrag">
+				<div id="knowhowupgrades" ><div id="khpos">
+					<div id="khupgrade1" class="khupgrade"></div>
+					<div id="khupgrade2" class="khupgrade"></div><div id="arrowsdiv2" class="arrowsdiv"></div>
+					<div id="khupgrade3" class="khupgrade"></div><div id="arrowsdiv3" class="arrowsdiv"></div>
+					<div id="khupgrade4" class="khupgrade"></div><div id="arrowsdiv4" class="arrowsdiv"></div>
+					<div id="khupgrade5" class="khupgrade"></div><div id="arrowsdiv5" class="arrowsdiv"></div><div id="arrowsdiv5b" class="arrowsdiv"></div>
+					<div id="khupgrade6" class="khupgrade"></div><div id="arrowsdiv6" class="arrowsdiv"></div>
+					<div id="khupgrade7" class="khupgrade"></div><div id="arrowsdiv7" class="arrowsdiv"></div>
+					<div id="khupgrade8" class="khupgrade"></div><div id="arrowsdiv8" class="arrowsdiv"></div>
+					<div id="khupgrade9" class="khupgrade"></div><div id="arrowsdiv9" class="arrowsdiv"></div>
+					<div id="khupgrade10" class="khupgrade"></div><div id="arrowsdiv10" class="arrowsdiv"></div>
+					<div id="khupgrade11" class="khupgrade"></div><div id="arrowsdiv11" class="arrowsdiv"></div>
+					<div id="khupgrade12" class="khupgrade"></div><div id="arrowsdiv12" class="arrowsdiv"></div>
+					<div id="khupgrade13" class="khupgrade"></div><div id="arrowsdiv13" class="arrowsdiv"></div>
+					<div id="khupgrade14" class="khupgrade"></div><div id="arrowsdiv14" class="arrowsdiv"></div>
+					<div id="khupgrade15" class="khupgrade"></div><div id="arrowsdiv15" class="arrowsdiv"></div>
+					<div id="khupgrade16" class="khupgrade"></div><div id="arrowsdiv16" class="arrowsdiv"></div>
+					<div id="khupgrade17" class="khupgrade"></div><div id="arrowsdiv17" class="arrowsdiv"></div>
+					<div id="khupgrade18" class="khupgrade"></div><div id="arrowsdiv18" class="arrowsdiv"></div>
+					<div id="khupgrade19" class="khupgrade"></div><div id="arrowsdiv19" class="arrowsdiv"></div>
+					<div id="khupgrade20" class="khupgrade"></div><div id="arrowsdiv20a" class="arrowsdiv"></div><div id="arrowsdiv20b" class="arrowsdiv"></div>
+					<div id="khupgrade21" class="khupgrade"></div><div id="arrowsdiv21a" class="arrowsdiv"></div><div id="arrowsdiv21b" class="arrowsdiv"></div>
+					<div id="khupgrade22" class="khupgrade"></div><div id="arrowsdiv22" class="arrowsdiv"></div>
+					<div id="khupgrade23" class="khupgrade"></div><div id="arrowsdiv23" class="arrowsdiv"></div>
+					<div id="khupgrade24" class="khupgrade"></div><div id="arrowsdiv24" class="arrowsdiv"></div>
+					<div id="khupgrade25" class="khupgrade"></div><div id="arrowsdiv25" class="arrowsdiv"></div>
+					<div id="khupgrade26" class="khupgrade"></div><div id="arrowsdiv26" class="arrowsdiv"></div>
+					<div id="khupgrade27" class="khupgrade"></div><div id="arrowsdiv27" class="arrowsdiv"></div>
+					<div id="khupgrade28" class="khupgrade"></div><div id="arrowsdiv28" class="arrowsdiv"></div>
+					<div id="khupgrade29" class="khupgrade"></div><div id="arrowsdiv29" class="arrowsdiv"></div>
+					<div id="khupgrade30" class="khupgrade"></div><div id="arrowsdiv30" class="arrowsdiv"></div>
+					<div id="khupgrade31" class="khupgrade"></div><div id="arrowsdiv31" class="arrowsdiv"></div>
+					<div id="khupgrade32" class="khupgrade"></div><div id="arrowsdiv32" class="arrowsdiv"></div>
+					<div id="khupgrade33" class="khupgrade"></div><div id="arrowsdiv33" class="arrowsdiv"></div>
+					<div id="khupgrade34" class="khupgrade"></div><div id="arrowsdiv34" class="arrowsdiv"></div>
+					<div id="khupgrade35" class="khupgrade"></div><div id="arrowsdiv35" class="arrowsdiv"></div>
+					<div id="khupgrade36" class="khupgrade"></div><div id="arrowsdiv36" class="arrowsdiv"></div>
+					<div id="khupgrade37" class="khupgrade"></div><div id="arrowsdiv37" class="arrowsdiv"></div>
+					<div id="khupgrade38" class="khupgrade"></div><div id="arrowsdiv38" class="arrowsdiv"></div>
+					<div id="khupgrade39" class="khupgrade"></div><div id="arrowsdiv39" class="arrowsdiv"></div>
+					<div id="khupgrade40" class="khupgrade"></div><div id="arrowsdiv40a" class="arrowsdiv"></div><div id="arrowsdiv40b" class="arrowsdiv"></div>
+				</div></div>
+			</div>
+			<div id="knowhowbutton"><button id="knowhowstart" class="knowhow">Start with know how</button></div>
+		</div>
+		
+		
+
+		<div id="alertnot"><div id="alertnotcontent"></div></div>
+		<div id="loading"><div style="text-align:center;padding-top:2em;"><img src="images/loading.gif"></div></div>
+		<div id="popover"></div>
+		<div id="popoverk"></div>
+		<div id="popovera"></div>
+		<div id="cloud">&nbsp;</div>
+		<div id="sun"><div id="sundiv"><span id="sunclicks">0</span></div></div>
+		<div id="stormtimer"></div>
+		<div id="clickstormtimer"></div>
+		<div id="turbotimer"></div>
+		<div id="wrathtimer"></div>
+		<div class="header">Fill The Oceans - v. 0.1 beta - &copy; cb, 2016  -  <a href="cookiestatement.html" target="_blank">Cookie policy</a>  - <a href="about.html" target="_blank">About</a></div>
+		<div class="containera">
+			
+			<div class="left-container" id="left_container">
+			
+				<p class="title">Store</p>
+				<p>Upgrades:</br></p>
+				<div id="upgradestore"></div>
+				<p>Helpers:</br></br></p>
+				<div id="helper_buy_number"><p>Buy <button id="helper_1" class="helperbuybutton">1</button> <button id="helper_10" class="helperbuybutton">10</button></p></br></div>
+				<div id="store-container"></div>
+				<div>&nbsp;</div>
+				
+
+				
+				<button id="storeclose" class="tabs">Close store</button>
+				
+				<script async src="../pagead2.googlesyndication.com/pagead/js/f.txt"></script>
+				<!-- responsive_1_filltheoceans -->
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-7150504416301667"
+					 data-ad-slot="2231097634"
+					 data-ad-format="auto"></ins>
+				<script>
+				(adsbygoogle = window.adsbygoogle || []).push({});
+				</script>
+
+			</div>
+			
+			<div class="center-container" id="center-container">
+				<div id="outerwaves"><div id="innerwaves" class="wavesanimation"></div></div>
+				<div id="countdiv"><p class="titlenumbers" ><span id="drop-count">0</span> drops</p><p class="subtitlenumbers" >per second: <span id="cps">0</span></p></div>
+				
+				
+				
+				<div id="aliencontainer">
+					<div id="dropbackgrounda" ><img src="images/dropbackground.png" id="dropbgimagea" class="rotatel" /></div>
+					<div id="dropbackgroundb" ><img src="images/dropbackgroundb.png" id="dropbgimageb" class="rotater"/></div>
+					<div id="dropbackgroundc"><img src="images/dropbackgroundc.png" id="dropbgimagec" /></div> 
+					<div id="aliencontainercenter"></div>
+					<div id="dropcontainer"></div>
+					<div id="produce-drop">&nbsp;</div>
+				</div>
+				
+				<div id="filloceandiv">
+					<button id="fill-ocean">Fill Ocean</button>
+					<p class="filloceantxt" style="text-align:center;"><span id="drops-in-ocean">0</span> drops in ocean</p>
+					<p class="filloceantxt" style="text-align:center;"><span id="percentage-drops-in-ocean">0</span> %</p>
+				</div>
+				
+
+				
+				
+				<div id="progressbarlabel">Ocean level</div>
+				<div id="progressbarcontainer"><div id="progressbaroutside"></div><div id="progressbarinside"></div><div id="fivep"></div><div id="tenp"></div><div id="fifteenp"></div><div id="twentyp"></div><div id="twentyfivep"></div><div id="thirtyp"></div><div id="thirtyfivep"></div><div id="fourtyp"></div><div id="fourtyfivep"></div><div id="fiftyp"></div><div id="fiftyfivep"></div><div id="sixtyp"></div><div id="sixtyfivep"></div><div id="seventyp"></div><div id="seventyfivep"></div><div id="eightyp"></div><div id="eightyfivep"></div><div id="ninetyp"></div><div id="ninetyfivep"></div></div>
+
+				<div id="progressbarlabelmtn">Mtn Eew level</div>
+				<div id="progressbarcontainermtn"><div id="progressbaroutsidemtn"></div><div id="progressbarinsidemtn"></div></div>
+
+				<div id="poseidonImage" class="poseidonanimation"></div>
+				<div id="templeImage"></div>
+				<div id="poseidonStart">
+					<table>
+						<tr>
+							<td><div class="noticeimage" style="border:2px solid white; border-radius:4px; background-image:url('images/png/poseidonsmall.png'); background-position:center;">&nbsp;</div></td>
+							<td><p class="popovertitle">Poseidon, God of the seas</p><p>How dare you even talk to me after you let those aliens steal my seas!</p><p>Show me some respect. Build a 1000 temples, bring sacrifices, pray to me and I will help you fill the seas.</p></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center;"><button class="knowhow" id="poseidonStartStartButton">Start building temples</button>&nbsp;<button class="knowhow" id="poseidonStartCloseButton">Close</button></td>
+						</tr>
+					</table>
+				</div>
+				<div id="poseidonEnd">
+					<table>
+						<tr>
+							<td><div class="noticeimage" style="border:2px solid white; border-radius:4px; background-image:url('images/png/poseidonsmall.png'); background-position:center;">&nbsp;</div></td>
+							<td><p class="popovertitle">Poseidon, God of the seas</p><p>I see you build a 1000 temples in my honor. Now sacrifice to me in the temple above me and I will help you when you pray to me.</p></td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align:center;"><button class="knowhow" id="poseidonEndStartButton">The temples</button>&nbsp;<button class="knowhow" id="poseidonEndCloseButton">Close</button></td>
+						</tr>
+					</table>
+				</div>
+				<div id="poseidonSacrifice">
+					<table>
+						<tr>
+							<td valign="top"><div class="noticeimage" style="border:2px solid white; border-radius:4px; background-image:url('images/png/poseidonsmall.png'); background-position:center;">&nbsp;</div></td>
+							<td>
+								<p class="popovertitle">Sacrifice for Poseidon&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+								<table style="width:100%;">
+									<tr style="width:100%;">
+										<td style="width:50%;"><p>Sacrifice in my honor and when you have gained my favor I will help you when you pray to me.</p><button class="knowhow" id="poseidonSacrificeCloseButton">Close</button></td>
+										<td style="width:50%;"><div id="sacrificeDiv" class="hoverSel"><p class="sacrificetext">Sacrifice<br />1 million drops</p><hr style="width:20%" /><p class="sacrificeexpl">Poseidon will get a little less grumpy.</p></div></td>
+									</tr>
+								</table>
+							</td>
+						</tr>
+					</table>
+					<div id="prayerDiv"></div>
+				</div>
+				<div id="prayerSelectDiv">
+					<p class="popovertitle">Select a prayer.</p>
+					<button class="knowhow" id="prayerSelectDivCloseButton">Close</button>
+				</div>
+				<div id="notices"></div>
+				<button id="storeopen" class="tabs">Open store</button>
+				<button id="statsopen" class="tabs">Open stats</button>
+			</div>
+			
+			<div class="right-container" id="right_container">
+				<div id="pagecontainer">
+					<div id="pagenav">
+						<button class="tabs active" id="tabstats">Stats</button> <button class="tabs" id="taboptions">Options</button>
+					</div>
+					<div id="pagestats">
+						<div id="expDiv" class="stats">
+							<p class="title">Experience points</p>
+							<p style="text-align:center;"><span id="experience_num" class="stattxt">0</span></p>
+							<div id="experience_progress"><div id="exp_progress_level">&nbsp;</div></div>
+							<div style="text-align:center;"><button id="knowhow_button" class="knowhow">Know-how</button></div>
+						</div>
+						<div class="stats">
+							<p class="title">Statistics</p>
+							<p>Drops in ocean: <span id="drops_in_ocean_stats" class="stattxt">0</span> drops / <span id="percentage_drops_in_ocean_stats" class="stattxt">0</span> %</p>
+							<p>Drops in bank: <span id="drops_in_bank_stats" class="stattxt">0</span> drops</p>
+							<p>Drops produced this know-how level: <span id="total_amount_produced_stats" class="stattxt">0</span> drops</p>
+							<p>Drops produced all know-how levels: <span id="total_ever_stats" class="stattxt">0</span> drops</p>
+							<p>Drops per second: <span id="drops_per_second_stats" class="stattxt">0</span>&nbsp;<span id="drainedstats"></span></p>
+							<p>Multiplier: <span id="multiplier_stats" class="stattxt">0</span> %</p>
+							<p>Drops per click: <span id="drops_per_click_stats" class="stattxt">0</span> drops</p>
+							<p>Hand-made clicks: <span id="hand-made_clicks_stats" class="stattxt">0</span> drops</p>
+							<p>Hand-made drops: <span id="hand-made_drops_stats" class="stattxt">0</span> drops</p>
+							<p>Experience points: <span id="experience_stats" class="stattxt">0</span></p>
+							<p>Drops to next exp point:  <span id="drops_to_next_exp" class="stattxt">0</span></p>
+							<p>Know-how: <span id="knowhow_stats" class="stattxt">0</span></p>
+							<p>Cloud clicks: <span id="cloudclicks_stats" class="stattxt">0</span></p>
+							<p>First started: <span id="first_start" class="stattxt">0</span></p>
+							<p>This run started: <span id="run_start" class="stattxt">0</span></p>
+							<p id="contactp">Next meeting with aliens: <span id="contact_stats" class="stattxt">0</span</p>
+							<p id="aliendrainstat">Aliens drained: <span id="aliendrain_stats" class="stattxt">0</span</p>
+							
+							<p class="title">Upgrades</p>
+							<p>Bought: <span id="bought_upgrades_txt" class="stattxt">0</span> / <span id="total_upgrades" class="stattxt">0</span> (<span id="upgrades_perc" class="stattxt">0</span>%)</p><br/>
+							<div id="bought-upgrades"></div>
+
+
+							<p class="title">Achievements</p>
+							<p>Unlocked: <span id="unlocked_achievements" class="stattxt">0</span> / <span id="total_achievements" class="stattxt">0</span> (<span id="achievements_perc" class="stattxt">0</span>)</p><br/>
+							<div id="achievements-store"></div>
+						</div>
+					</div>
+					<div id="pageoptions">
+						<p class="subtitle">Save / load / reset</p>
+						<button id="save" class="optionbutton">Save</button> Save the game (game saves automatically every minute)</br></br>
+						<button id="export" class="optionbutton">Export save</button> <button id="import" class="optionbutton">Import save</button> Backup your save</br></br>
+						<button id="reset" class="optionbutton">Reset</button> Delete all your progress
+						
+						<p class="subtitle">Settings</p>
+						<button id="numberOption" class="optionbutton">Numbers: shortened</button> Number options: shortened / scientific<br /><br />
+						<button id="animatetextOption" class="optionbutton">Show number of drops: yes</button> Show number of drops on click<br /><br />
+						<button id="littledropOption" class="optionbutton">Animate little drops: yes</button><br /><br />
+						<button id="bgdropOption" class="optionbutton">Little background drops: yes</button><br /><br />
+						<form id="volumeform">
+							 <fieldset>
+								<legend>Volume</legend>
+								<input type="range" id="volume" name="volume" min="0" max="100"> <span id="volumepercent" class="stattxt" style="float:right;">0</label>%
+							</fieldset>
+						</form><br />
+						<button id="cloudSoundOption" class="optionbutton">Cloud sound: off</button> Makes a sound when a cloud appears.<br /><br />
+					</div>
+				</div>
+				<button id="statsclose" class="tabs">Close stats</button>
+			</div>
+			
+		</div>
+	<audio id="cloudping" src="http://freesound.org/data/previews/66/66717_931655-lq.mp3" preload="auto"></audio>
+	
+	
+	<script src="HackTimer.min.js"></script>
+	<script   src="../code.jquery.com/jquery-2.2.4.min.js"   integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="   crossorigin="anonymous"></script>
+	<script>
+		if (typeof jQuery == 'undefined') {
+			document.write(unescape("%3Cscript src='/js/jquery-2.2.3.min.js' type='text/javascript'%3E%3C/script%3E"));
+		}
+	</script>
+	<script   src="../code.jquery.com/ui/1.12.1/jquery-ui.min.js"   integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU="   crossorigin="anonymous"></script>
+	<script src="dragmobile.js"></script>
+	<script src="main.js"></script>
+	</body>
+
+<!-- Mirrored from www.filltheoceans.com/ by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 28 Nov 2016 21:04:41 GMT -->
+</html>
